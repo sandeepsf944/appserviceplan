@@ -11,11 +11,7 @@
 # }
 
 output service_plan_id {
-  value       = azurerm_service_plan.example.id
-}
-
-output linux_web_app_name { 
-  value = var.linux_web_app_name
+  value       = azurerm_service_plan.app_service_plan.id
 }
 
 output service_plan_name {

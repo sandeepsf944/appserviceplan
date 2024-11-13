@@ -1,5 +1,5 @@
-resource "azurerm_service_plan" "example" {
-  name                = var.service_plan_name == "" ? format("ASP-%s", lower(replace(var.linux_web_app_name, "/[[:^alnum:]]/", ""))) : var.service_plan_name
+resource "azurerm_service_plan" "app_service_plan" {
+  name                = var.service_plan_name
   resource_group_name = var.resource_group_name
   location            = var.location
   os_type             = "Linux"
